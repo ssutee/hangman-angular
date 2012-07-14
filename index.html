@@ -11,12 +11,14 @@
   <div ng-controller="HangmanCtrl">
     <div> Life Time: {{lifeTimes}}</div>
     <div>{{displayStarsText}}</div>
-    <div class="bear_{{lifeTimes}}">{{lifeTimes}}</div>
+    <div class="bear bear_{{lifeTimes}}"></div>
     <div class="is_win_{{isWin()}}">You win</div>
     <div class="is_lose_{{isLose()}}">You lose</div>
-    <input type="text" ng-model="inputText" placeholder="Enter a character"></input>
-    <button ng-click="enterCharacter(inputText)" class="end_game_{{isLose() || isWin() || !isReady}}">Submit</button>
-    <button ng-click="setNewGame(chooseWordRandomly())">New Game</button>
+    <div class="input_container">
+      <input type="text" ng-model="inputText" placeholder="Enter a character"></input>
+      <button ng-click="enterCharacter(inputText)" class="end_game_{{isLose() || isWin() || !isReady}}">Submit</button>
+      <button ng-click="setNewGame(chooseWordRandomly())">New Game</button>
+    </div>
   </div>
 </body>
 </html>

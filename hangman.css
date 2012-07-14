@@ -1,3 +1,10 @@
+#HangmanCtrl{
+	width:400px;
+	height:550px;
+	position:relative;
+	border: solid 1px;
+}
+
 .end_game_true {
   display: none;
 }
@@ -14,43 +21,68 @@
   display: none;  
 }
 
-.is_win_true {
-  display: block;
+.is_win_true{
+	font-size: 20px;
+	font-weight: bold;
+	color: blue;
+	position:absolute;
+	top:50px;
+	left:250px;
+	display: inline;
+}
+.is_win_false{
+	display: none; 
+}
+.is_lose_true{
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	position:absolute;
+	top:50px;
+	left:250px;
+	display: inline;
+}
+.is_lose_false{
+	display: none; 
 }
 
-.is_win_false {
-  display: none;
-}
-
-.is_lose_true {
-  display: block;
-}
-
-.is_lose_false {
-  display: none;
+.input_container{
+	position:absolute;
+	top:500px;
+	left:20px;
 }
 
 .bear_5 {
-  background: url(/images/stories/bear5.png);
+  background: url('./images/Bear5.png');
 }
 
 .bear_4 {
-  background: url(/images/stories/bear4.png);
+  background: url('./images/Bear4.png');
 }
 
 .bear_3 {
-  background: url(/images/stories/bear3.png);
+  background: url('./images/Bear3.png');
 }
 
 .bear_2 {
-  background: url(/images/stories/bear2.png);
+  background: url('./images/Bear2.png');
 }
 
 .bear_1 {
-  background: url(/images/stories/bear1.png);
+  background: url('./images/Bear1.png');
 }
 
 .bear_0 {
-  background: url(/images/stories/bear0.png);
+  background: url('./images/Bear0.png');
 }
 
+.bear{
+	width: 360px;
+	height: 464px;
+	background-size:360px 464px;
+	background-repeat:no-repeat;
+	display:inline-block;
+	position:absolute;
+	top:20px;
+	left:20px;
+}
