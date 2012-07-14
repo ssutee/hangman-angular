@@ -22,24 +22,24 @@
 }
 
 .is_win_true{
-	font-size: 20px;
+	font-size: 40px;
 	font-weight: bold;
 	color: blue;
 	position:absolute;
-	top:50px;
-	left:250px;
+	top:250px;
+	left:180px;
 	display: inline;
 }
 .is_win_false{
 	display: none; 
 }
 .is_lose_true{
-	font-size: 20px;
+	font-size: 40px;
 	font-weight: bold;
 	color: red;
 	position:absolute;
-	top:50px;
-	left:250px;
+	top:250px;
+	left:180px;
 	display: inline;
 }
 .is_lose_false{
